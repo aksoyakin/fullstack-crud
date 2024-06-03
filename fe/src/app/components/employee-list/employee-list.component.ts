@@ -2,11 +2,17 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../../common/employee';
 import { EmployeeService } from '../../services/employee.service';
+import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-employee-list',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,
+    RouterLinkActive,
+    RouterModule,
+    RouterLink,
+    RouterLinkActive
+  ],
   templateUrl: './employee-list.component.html',
   styleUrl: './employee-list.component.css'
 })
