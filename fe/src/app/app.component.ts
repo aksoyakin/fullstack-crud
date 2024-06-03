@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
+import { CreateEmployeeComponent } from './components/create-employee/create-employee.component';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ import { EmployeeListComponent } from './components/employee-list/employee-list.
     RouterOutlet, 
     EmployeeListComponent,
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    CreateEmployeeComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
